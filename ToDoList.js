@@ -5,7 +5,7 @@ function addTache(){
 
 	let ligne = document.createElement('div');
 	ligne.setAttribute("id", tache);
-	ligne.innerHTML = tache+'<button type="button" class="btn btn-primary" onclick=addTacheGood('+tache+')>Termine</button>';
+	ligne.innerHTML = tache+'<button type="button" class="btn btn-primary" onclick=addTacheGood("'+tache+'")>Termine</button>';
 	lb.appendChild(ligne);
 
 }
@@ -16,8 +16,8 @@ function addTacheGood(tache){
 	let lg = document.getElementById("listeGood");
 	let ligne = document.createElement('div');
 	ligne.setAttribute("id", tache);
-	ligne.innerHTML = tache+'<button type="button" class="btn btn-primary" onclick=removeTacheGood('+tache+')>Termine</button>';
-	lb.appendChild(ligne);
+	ligne.innerHTML = tache+'<button type="button" class="btn btn-primary" onclick=removeTacheGood("'+tache+'")>Termine</button>';
+	lg.appendChild(ligne);
 }
 
 function removeTacheGood(tache){
@@ -26,7 +26,7 @@ function removeTacheGood(tache){
 
 	let ligne = document.createElement('div');
 	ligne.setAttribute("id", tache);
-	ligne.innerHTML = tache+'<button type="button" class="btn btn-primary" onclick=addTacheGood('+tache+')>Termine</button>';
+	ligne.innerHTML = tache+'<button type="button" class="btn btn-primary" onclick=addTacheGood("'+tache+'")>Termine</button>';
 	lb.appendChild(ligne);
 }
 

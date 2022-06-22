@@ -1,34 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <link href ='/Boostrap/bootstrap.css'>
-    <link href ='/Boostrap/bootstrap.js'>
-    <link href="/Boostrap/jquery-3.6.0.min.js">
-    <link href ="ToDoList.js">
-</head>
-<body>
-    
-    <div id="myDIV" class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <h2>My To Do List</h2>
-        <input type="text" id="myInput" placeholder="Title...">
-        <button class="btn btn-secondary my-2 my-sm-0"  onclick="addTache()" class="addBtn">Add</button>
-      </div>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="Boostrap/bootstrap.css">
+        <script src="Boostrap/jquery-3.6.0.min.js"></script>
+        <script src="Boostrap/bootstrap.js"></script>
+        <script src="ToDoList.js"></script>
 
-      <div id="listeBad">
+    </head>
+    <body>
 
-      </div>
+        <div class="container">
+            <div id="myDIV">
+                <h2>My To Do List</h2>
+                <input type="text" id="myInput" placeholder="Title...">
+                <button class="btn btn-secondary my-2 my-sm-0"  onclick="addTache()" class="addBtn">Add</button>
+            </div>
 
-      <div id="listeGood"> 
+            <h3>Tache a faire</h3>
+            <div id="listeBad">
 
-      </div>
+            </div>
 
+            <h3>Tache faite</h3>
 
+            <div id="listeGood"> 
 
-</body>
-</html>
+            </div>
+
+        </div>
+
+    </body>
+    </html>
